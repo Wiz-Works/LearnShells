@@ -280,7 +280,7 @@ def cli(ctx, version, debug):
     # Enable debug logging if requested
     if debug:
         logger.set_verbose_mode(True)
-        logging.basicConfig(level=logging.DEBUG)
+        logging.basicConfig(level=logging.DEBUG, force=True)
         console.print("[bold yellow]Debug mode enabled[/bold yellow]")
     if version:
         console.print("[bold cyan]LearnShells v1.0.0[/bold cyan]")
